@@ -65,7 +65,7 @@ def do_it(index):
         html = requests.get(url,headers=headers,timeout=5)
         text = html.text
 
-        #每一页有多行内容，把每行所在节点进行findall匹配
+        #每一页有多行内容，把每行所在节点用findall匹配
         moban1 = re.findall('<i class="board-index board-index(.*?)</dd>',text,re.S)   #不同网页的每行匹配规则不一样
 
         for i in moban1:
