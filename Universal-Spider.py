@@ -6,7 +6,7 @@ import gevent
 from gevent import monkey
 
 
-#待拼接的url
+#待拼接的url  这里以猫眼top100为例
 url0 = 'https://maoyan.com/board/4?offset='
 
 #定义头文件，默认只要ua，不同情况可加上不同的头文件字段，部分反爬是需要处理请求头的
